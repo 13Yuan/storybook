@@ -4,7 +4,10 @@
   "description": "story book & puppeteer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "start-storybook-for-theme": "start-storybook -p 8001 -c .storybook-theme",
+    "storybook-static-html": "build-storybook -c .storybook -o .out"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,17 @@
   "bugs": {
     "url": "https://github.com/13Yuan/storybook/issues"
   },
-  "homepage": "https://github.com/13Yuan/storybook#readme"
+  "homepage": "https://github.com/13Yuan/storybook#readme",
+  "devDependencies": {
+    "@storybook/addon-info": "^3.3.11",
+    "@storybook/addon-knobs": "^3.3.11",
+    "@storybook/addon-notes": "^3.3.11",
+    "@storybook/react": "^3.3.11",
+    "babel-core": "^6.26.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
 }

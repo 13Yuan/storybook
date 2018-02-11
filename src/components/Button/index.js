@@ -17,7 +17,8 @@ class Button extends Component {
   }
 }
 
-Button.PropTypes = {
+Button.propTypes = {
+   /** click event */  
   onClick: PropTypes.func.isRequired,
   name: PropTypes.string,
   styles: PropTypes.array

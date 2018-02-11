@@ -63,7 +63,9 @@ stories.add("With Text", () => (
 
 import Description from "../description";
 
-stories.add(
+storiesOf("Buttons/InfoAddons", module)
+.addDecorator(withKnobs)
+.add(
   "info addons",
   withInfo({
     Description
